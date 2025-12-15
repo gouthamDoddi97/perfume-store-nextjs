@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-elegant transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .luxury-gradient {
+    @apply bg-gradient-to-r from-luxury-gold via-luxury-rosegold to-luxury-gold;
+  }
+  
+  .dark-luxury-gradient {
+    @apply bg-gradient-to-r from-luxury-gold via-yellow-400 to-luxury-gold;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+  
+  .luxury-shadow {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark-luxury-shadow {
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.2);
+  }
+}
