@@ -35,4 +35,3 @@ next-env.d.ts
 
 # Database backups
 moonlight-backup/
-*.json
